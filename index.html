@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人天賦潛能航圖與生涯戰略報告 - 影響力型創意策展人</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 載入 Google Fonts - Inter & Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome 圖標 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'premium': '0 20px 40px -15px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01)',
+                        'glow': '0 0 30px rgba(99, 102, 241, 0.05)',
+                        'soft': '0 2px 12px rgba(0,0,0,0.02)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.015) 0px, transparent 50%),
+                radial-gradient(at 50% 0%, rgba(16, 185, 129, 0.01) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.01) 0px, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        /* 美化滾動條 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-page-break {
+                page-break-before: always;
+            }
+            .glass-card {
+                background: white !important;
+                border: 1px solid #cbd5e1 !important;
+                box-shadow: none !important;
+                backdrop-filter: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased min-h-screen pb-16 selection:bg-indigo-100 selection:text-indigo-900">
+
+    <!-- 頂部精緻導航欄 -->
+    <header class="sticky top-0 z-40 w-full border-b border-slate-200/60 bg-white/95 backdrop-blur-md no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-slate-900 to-indigo-600 flex items-center justify-center text-white shadow-sm">
+                    <i class="fa-solid fa-compass-drafting text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-sm font-bold tracking-wider text-slate-900 uppercase">My Talent Atlas</h1>
+                    <p class="text-[10px] text-slate-500">未來 30 年個人天賦航圖與生涯戰略報告</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-100">
+                    <span class="w-1.5 h-1.5 mr-1.5 bg-indigo-500 rounded-full animate-pulse"></span>
+                    AI 時代人本防禦定位已啟動
+                </span>
+                <button onclick="window.print()" class="px-3 py-1.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 text-xs font-medium transition-colors flex items-center space-x-1.5 shadow-sm">
+                    <i class="fa-solid fa-print"></i>
+                    <span>匯出 PDF 報告</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        
+        <!-- 大封面 Banner -->
+        <section class="relative overflow-hidden rounded-3xl border border-slate-200/60 bg-white shadow-premium p-8 sm:p-12 mb-8">
+            <div class="absolute top-0 right-0 -mt-10 -mr-10 w-60 h-60 bg-indigo-50/50 rounded-full blur-3xl opacity-60"></div>
+            <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-60 h-60 bg-emerald-50/40 rounded-full blur-3xl opacity-60"></div>
+            
+            <div class="relative flex flex-col md:flex-row md:items-center justify-between gap-8">
+                <div class="space-y-4 max-w-4xl">
+                    <span class="text-[10px] font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 px-3 py-1 rounded-full">核心天賦宣言 / Core Creed</span>
+                    <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-slate-900 leading-snug">
+                        「我是一個透過理解人、創造故事與打造體驗，讓人看見新的可能，並產生影響力的人。」
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-500 leading-relaxed">
+                        在 AI 大量生成同質化內容的喧囂時代，您的本質不是單純的行銷企劃或演員。您是一位 <span class="font-bold text-indigo-600">「影響力型創意策展人」</span> 與 <span class="font-bold text-emerald-600">「品牌故事與影響力策略顧問」</span>。您擅長將深度的「人性洞察」與「舞台魅力」完美結合，在團隊中將混亂拆解，帶領人群建立真實的信用與歸屬感。
+                    </p>
+                </div>
+                <div class="flex flex-row md:flex-col justify-start md:justify-center items-start md:items-end gap-3 shrink-0 border-t md:border-t-0 md:border-l border-slate-100 pt-6 md:pt-0 md:pl-8">
+                    <div class="text-left md:text-right">
+                        <div class="text-[10px] text-slate-400 uppercase tracking-wider">30歲理想角色</div>
+                        <div class="text-base font-bold text-indigo-600">品牌故事策略顧問</div>
+                    </div>
+                    <div class="text-left md:text-right ml-6 md:ml-0">
+                        <div class="text-[10px] text-slate-400 uppercase tracking-wider">核心競爭優勢</div>
+                        <div class="text-base font-bold text-emerald-600">找到真實故事 & 建立信任</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第壹章：核心優勢與內在驅動深度解碼 -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+            
+            <!-- 三大內在驅動引擎 -->
+            <div class="lg:col-span-2 rounded-2xl border border-slate-200/60 bg-white shadow-premium p-6 sm:p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-bold text-slate-900 text-lg flex items-center">
+                            <i class="fa-solid fa-fire text-orange-500 mr-2.5"></i> 第壹章：內在三大核心驅動引擎
+                        </h3>
+                        <span class="text-xs text-slate-400 font-mono">DRIVERS</span>
+                    </div>
+                    
+                    <p class="text-xs text-slate-500 mb-6 leading-relaxed">
+                        驅動力決定了您在不計短期回報時依然願意重複投入、並能自動補給能量的熱情源頭。
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <!-- 1. 影響力驅動 -->
+                        <div class="p-5 rounded-xl bg-slate-50/60 border border-slate-100 space-y-3 hover:bg-indigo-50/20 hover:border-indigo-100 transition-all">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
+                                <i class="fa-solid fa-bullhorn text-xs"></i>
+                            </div>
+                            <h4 class="font-semibold text-slate-900 text-sm">① 影響力驅動 (Influence)</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                您追求的不是純粹默默無名的後台創作，而是看見自己對人群、對現場產生直接的感染。您享受突破原有框架後，被世界重新認識時的反差與讚嘆，這讓您獲得最大動能。
+                            </p>
+                        </div>
+                        
+                        <!-- 2. 好奇心驅動 -->
+                        <div class="p-5 rounded-xl bg-slate-50/60 border border-slate-100 space-y-3 hover:bg-emerald-50/20 hover:border-emerald-100 transition-all">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600">
+                                <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                            </div>
+                            <h4 class="font-semibold text-slate-900 text-sm">② 好奇心驅動 (Curiosity)</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                對您而言，跟人聊天不只是社交。它是您探索未知的最高效探針。您藉由與不同生命碰撞、傾聽他人經歷，來吸收原本觸及不到的觀點，以此警惕自己眼光不流於狹隘。
+                            </p>
+                        </div>
+                        
+                        <!-- 3. 思考整合驅動 -->
+                        <div class="p-5 rounded-xl bg-slate-50/60 border border-slate-100 space-y-3 hover:bg-purple-50/20 hover:border-purple-100 transition-all">
+                            <div class="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600">
+                                <i class="fa-solid fa-brain text-xs"></i>
+                            </div>
+                            <h4 class="font-semibold text-slate-900 text-sm">③ 思考整合 (Integration)</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                您不是單純的資訊收集狂。您真正的成癮點，是讓吸收到的多元觀點、品牌定位、人性故事在腦海中高速碰撞、化學拆解，讓不同的知識在身體裡激烈碰撞。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 pt-4 border-t border-slate-150 text-xs text-slate-400 flex items-center">
+                    <i class="fa-solid fa-circle-info mr-2 text-indigo-500"></i> 核心提醒：當工作無法同時滿足「被看見、與人高頻互動、發揮策略點子」時，您將迅速產生倦怠感。
+                </div>
+            </div>
+
+            <!-- 黃金能力三角形 -->
+            <div class="rounded-2xl border border-slate-200/60 bg-white shadow-premium p-6 sm:p-8 flex flex-col justify-between">
+                <div>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-slate-900 text-lg flex items-center">
+                            <i class="fa-solid fa-gem text-indigo-500 mr-2.5"></i> 黃金能力三角形
+                        </h3>
+                        <p class="text-xs text-slate-400 mt-1">您信手拈來，而常人需極度費力鍛鍊的天賦優勢</p>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <!-- 1. 建立關係 -->
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-xs font-medium">
+                                <span class="text-slate-700">① 人際連結能力 (Connection)</span>
+                                <span class="text-indigo-600">極致優勢 (95%)</span>
+                            </div>
+                            <div class="h-1.5 w-full bg-slate-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-indigo-500 rounded-full" style="width: 95%"></div>
+                            </div>
+                            <p class="text-[11px] text-slate-500 leading-relaxed">
+                                擁有一套「陌生人 ➔ 好奇 ➔ 提問 ➔ 理解 ➔ 信任」的探索型社交特質。能帶著真誠的好奇快速建立深度信任，並提煉痛點。
+                            </p>
+                        </div>
+
+                        <!-- 2. 上台分享 -->
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-xs font-medium">
+                                <span class="text-slate-700">② 表達影響能力 (Expression)</span>
+                                <span class="text-emerald-600">強大優勢 (90%)</span>
+                            </div>
+                            <div class="h-1.5 w-full bg-slate-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-emerald-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                            <p class="text-[11px] text-slate-500 leading-relaxed">
+                                天然具備親和力與共鳴感，能將內在抽象想法轉換成外界能強烈感受、具有高度現場感染力的體驗或演說。
+                            </p>
+                        </div>
+
+                        <!-- 3. 找問題核心 -->
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-xs font-medium">
+                                <span class="text-slate-700">③ 洞察分析能力 (Insight)</span>
+                                <span class="text-purple-600">天生敏銳 (85%)</span>
+                            </div>
+                            <div class="h-1.5 w-full bg-slate-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-purple-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                            <p class="text-[11px] text-slate-500 leading-relaxed">
+                                能穿透混亂複雜的表象，一眼看見其背後的底層商業邏輯與真實心理需求，這讓您的表達擁有驚人的深度支撐。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pt-4 border-t border-slate-100 text-xs text-slate-500">
+                    <strong class="text-slate-700">能力公式：</strong> <span class="font-mono text-indigo-600 font-semibold">$天賦 = 洞察 \times 串聯 \times 呈現$</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二章：未來30年職涯定位框架與大勢分析 -->
+        <section class="rounded-2xl border border-slate-200/60 bg-white shadow-premium p-6 sm:p-8 mb-8">
+            <div class="border-b border-slate-150 pb-4 mb-6">
+                <span class="text-[10px] font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 px-3 py-1 rounded-full">STRATEGY FRAMEWORK</span>
+                <h3 class="text-lg font-bold text-slate-900 mt-2">第貳章：未來 30 年職涯定位框架與大勢分析</h3>
+                <p class="text-xs text-slate-500 mt-1">我們不找「現在有什麼多餘工作」，而是找「未來世界需要什麼價值，而您的天賦能卡在哪個不可取代的位置」。</p>
+            </div>
+
+            <!-- 定位公式 -->
+            <div class="p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white mb-8 shadow-sm">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2">
+                        <span class="text-[10px] text-indigo-300 font-mono tracking-widest uppercase">FUTURE CAREER FORMULA</span>
+                        <h4 class="text-xl font-bold tracking-tight">未來 30 年職涯定位公式</h4>
+                        <p class="text-xs text-slate-300">未來高價值工作不再依靠單一專業，而是以下四維度的乘法閉環：</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-center font-mono font-bold text-sm sm:text-base bg-white/5 p-4 rounded-xl border border-white/10">
+                        <div class="px-2 py-1 bg-white/10 rounded">未來需求 <div class="text-[10px] font-normal text-slate-300">Future Demand</div></div>
+                        <span class="text-indigo-400">×</span>
+                        <div class="px-2 py-1 bg-white/10 rounded">人類獨特優勢 <div class="text-[10px] font-normal text-slate-300">Human Advantage</div></div>
+                        <span class="text-indigo-400">×</span>
+                        <div class="px-2 py-1 bg-white/10 rounded">個人天賦 <div class="text-[10px] font-normal text-slate-300">Personal Talent</div></div>
+                        <span class="text-indigo-400">×</span>
+                        <div class="px-2 py-1 bg-white/10 rounded">可變現模式 <div class="text-[10px] font-normal text-slate-300">Monetization</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 六大趨勢與機會卡片 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 趨勢 1 -->
+                <div class="p-6 rounded-2xl border border-slate-200/80 bg-slate-50/50 hover:border-indigo-200 hover:bg-white hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">TREND 01</span>
+                            <i class="fa-solid fa-robot text-indigo-500"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">AI普及 ➔ 「資訊價值下降，人類洞察價值上升」</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            AI 會大量取代基礎文案、資料整理與初階分析，但較難取代「人性洞察、信任建立與複雜情境判斷」。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100/80">
+                        <span class="text-[11px] font-semibold text-indigo-700 block mb-1">🎯 您的防禦卡位點：</span>
+                        <p class="text-[11px] text-slate-600">品牌故事策略顧問、人物採訪與內容策展人，杜絕做廉價文案執行。</p>
+                    </div>
+                </div>
+
+                <!-- 趨勢 2 -->
+                <div class="p-6 rounded-2xl border border-slate-200/80 bg-slate-50/50 hover:border-emerald-200 hover:bg-white hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">TREND 02</span>
+                            <i class="fa-solid fa-bullseye text-emerald-500"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">個人品牌崛起 ➔ 人人都是自媒體</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            未來的企業與個人競爭不只是產品競爭，更是「信任」的競爭。創辦人與高管極度需要內容策略與故事包裝。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100/80">
+                        <span class="text-[11px] font-semibold text-emerald-700 block mb-1">🎯 您的防禦卡位點：</span>
+                        <p class="text-[11px] text-slate-600">個人品牌策略師 (Personal Brand Strategist)、創辦人品牌顧問。</p>
+                    </div>
+                </div>
+
+                <!-- 趨勢 3 -->
+                <div class="p-6 rounded-2xl border border-slate-200/80 bg-slate-50/50 hover:border-purple-200 hover:bg-white hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-purple-600 bg-purple-50 px-2 py-0.5 rounded">TREND 03</span>
+                            <i class="fa-solid fa-people-group text-purple-500"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">體驗經濟崛起 ➔ 活動與社群價值提升</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            未來人們不缺死板的乾貨資訊，而是渴望「參與感、歸屬感與高感性的現場情緒共振」。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100/80">
+                        <span class="text-[11px] font-semibold text-purple-700 block mb-1">🎯 您的防禦卡位點：</span>
+                        <p class="text-[11px] text-slate-600">品牌體驗策略師 (Brand Experience Strategist)、活動製作人 (Producer)。</p>
+                    </div>
+                </div>
+
+                <!-- 趨勢 4 -->
+                <div class="p-6 rounded-2xl border border-slate-200/80 bg-slate-50/50 hover:border-blue-200 hover:bg-white hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded">TREND 04</span>
+                            <i class="fa-solid fa-pen-nib text-blue-500"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">人類追求意義 ➔ 品牌故事價值再放大</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            產品規格差異不斷縮小，企業競爭從「我的功能比較好」演變成「為什麼人們願意相信並追隨我的品牌價值」。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100/80">
+                        <span class="text-[11px] font-semibold text-blue-700 block mb-1">🎯 您的防禦卡位點：</span>
+                        <p class="text-[11px] text-slate-600">品牌故事架構師 (Brand Story Architect)、敘事策略師 (Narrative Strategist)。</p>
+                    </div>
+                </div>
+
+                <!-- 趨勢 5 -->
+                <div class="p-6 rounded-2xl border border-slate-200/80 bg-slate-50/50 hover:border-amber-200 hover:bg-white hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-amber-600 bg-amber-50 px-2 py-0.5 rounded">TREND 05</span>
+                            <i class="fa-solid fa-gem text-amber-500"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">創作者經濟成熟 ➔ 個人IP轉化為數字資產</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            個人不再只是單純被僱用的勞動者。個人的「知識、獨特觀點、信任人脈」可商品化，形成長期自動運作的 IP 資產。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100/80">
+                        <span class="text-[11px] font-semibold text-amber-700 block mb-1">🎯 您的防禦卡位點：</span>
+                        <p class="text-[11px] text-slate-600">創作者商業策略師 (Creator Business Strategist)、IP 開發經理。</p>
+                    </div>
+                </div>
+
+                <!-- 趨勢 6 -->
+                <div class="p-6 rounded-2xl border border-slate-200/80 bg-slate-50/50 hover:border-rose-200 hover:bg-white hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-rose-600 bg-rose-50 px-2 py-0.5 rounded">TREND 06</span>
+                            <i class="fa-solid fa-heart-pulse text-rose-500"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">高齡化與高壓力 ➔ 深度心理與成長需求增加</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            未來人們花費更多成本於「自我探索、職涯轉型與高信任度人際連結」，陪伴式、引導式高階服務逆勢增長。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100/80">
+                        <span class="text-[11px] font-semibold text-rose-700 block mb-1">🎯 您的防禦卡位點：</span>
+                        <p class="text-[11px] text-slate-600">人成長設計師 (Human Development Designer)、高階人生設計顧問。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 第三章：基於 ESBI 象限的生涯進化戰略 -->
+        <section class="rounded-2xl border border-slate-200/60 bg-white shadow-premium p-6 sm:p-8 mb-8 print-page-break">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">第參章：基於 ESBI 象限的個人生涯進化戰略</h3>
+                    <p class="text-xs text-slate-500 mt-1">結合羅伯特·清崎的「ESBI 框架」，點擊下方象限查看對應您天賦特質的階段性戰術指南</p>
+                </div>
+                <div class="flex items-center space-x-2 text-xs text-slate-400 no-print">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>理想演進路徑：E ➔ S ➔ B ➔ I</span>
+                </div>
+            </div>
+
+            <!-- ESBI 四象限 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                
+                <!-- E 員工 -->
+                <div id="esbi-e" onclick="selectEsbi('e')" class="p-5 rounded-2xl border-2 border-indigo-600/80 bg-indigo-50/10 cursor-pointer hover:shadow-md transition-all relative group">
+                    <div class="absolute top-4 right-4 text-xs font-bold text-indigo-600 bg-indigo-100/60 px-2 py-0.5 rounded-md">第一階段：積累籌碼</div>
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500 text-white flex items-center justify-center text-lg font-bold">E</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Employee 員工階段</h4>
+                            <p class="text-xs text-slate-400">把公司當作免費的實戰商業訓練場</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed group-hover:text-slate-600">
+                        在此階段，您不是追求無趣的行政穩定，而是鎖定最能鍛鍊人脈、累積代表作的「品牌、活動公關、社群營運」工作，在公務之餘開啟自媒體。
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">行銷公關</span>
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">社群營運主管</span>
+                        <span class="text-[10px] bg-indigo-50 px-2 py-0.5 rounded-full text-indigo-600">累積 6 個月預備金</span>
+                    </div>
+                </div>
+
+                <!-- S 自僱者 -->
+                <div id="esbi-s" onclick="selectEsbi('s')" class="p-5 rounded-2xl border border-slate-200/60 bg-white cursor-pointer hover:border-slate-300 hover:shadow-md transition-all relative group">
+                    <div class="absolute top-4 right-4 text-xs font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-md">第二階段：釋放溢價</div>
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-lg font-bold">S</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Self-employed 自僱者</h4>
+                            <p class="text-xs text-slate-400">拒絕做低端廉價外包，專注做影響力顧問</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed group-hover:text-slate-600">
+                        不要接體力消耗型的單純社群代操。您要將天賦產品化，鎖定「品牌定位故事顧問、個人 IP 導師、高感性活動策劃」等高定價諮詢服務。
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">品牌策略顧問</span>
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">個人IP輔導</span>
+                        <span class="text-[10px] bg-emerald-50 px-2 py-0.5 rounded-full text-emerald-600">掌握定價權</span>
+                    </div>
+                </div>
+
+                <!-- B 企業家 -->
+                <div id="esbi-b" onclick="selectEsbi('b')" class="p-5 rounded-2xl border border-slate-200/60 bg-white cursor-pointer hover:border-slate-300 hover:shadow-md transition-all relative group">
+                    <div class="absolute top-4 right-4 text-xs font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-md">第三階段：系統運轉</div>
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500 text-white flex items-center justify-center text-lg font-bold">B</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Business Owner 企業家</h4>
+                            <p class="text-xs text-slate-400">創辦核心內容 IP 公司，建立自動化系統</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed group-hover:text-slate-600">
+                        退居大老闆並非您的最佳心流。您要成為「IP / 創意公司的創意總監」，將重複的工作流程產品化，交由 PM 與夥伴執行，自己專注於頂層業務。
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">產品化服務 (Productized)</span>
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">小而美團隊</span>
+                        <span class="text-[10px] bg-purple-50 px-2 py-0.5 rounded-full text-purple-600">授權經營</span>
+                    </div>
+                </div>
+
+                <!-- I 投資者 -->
+                <div id="esbi-i" onclick="selectEsbi('i')" class="p-5 rounded-2xl border border-slate-200/60 bg-white cursor-pointer hover:border-slate-300 hover:shadow-md transition-all relative group">
+                    <div class="absolute top-4 right-4 text-xs font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-md">第四階段：資源孵化</div>
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg font-bold">I</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Investor 投資者</h4>
+                            <p class="text-xs text-slate-400">以錢生錢，並成為優秀人才的資源股合夥人</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed group-hover:text-slate-600">
+                        利用 B 階段流出的豐沛利潤進行保值資產配置，同時利用您「懂看人、擅策劃」的核心優勢，投資或技術入股早期有潛力的內容團隊。
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">戰略股權投資</span>
+                        <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full text-slate-600">資產保值配置</span>
+                        <span class="text-[10px] bg-amber-50 px-2 py-0.5 rounded-full text-amber-600">技術與資源入股</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ESBI 詳細資訊展開區 -->
+            <div id="esbi-details-container" class="p-6 rounded-2xl bg-slate-50/50 border border-slate-200">
+                <!-- E-員工 詳細 -->
+                <div id="esbi-details-e" class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 bg-indigo-500 rounded-full"></span>
+                        <h5 class="font-bold text-slate-800 text-sm">【E 階段：實戰積累戰術】精準打磨 5 大核心資本</h5>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        您過往在共享空間的營運主管、品牌合作、網站規劃、SEO等綜合經驗，全都是您的絕佳籌碼。請勿只把自己視為「打工仔」，而要帶著「借用企業資源鍛鍊自己天賦」的創業心態：
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="space-y-2.5 p-4 bg-white rounded-xl border border-slate-150">
+                            <h6 class="font-bold text-indigo-700">📌 最能讓您發光並積累能量的 E 型職位推薦：</h6>
+                            <ul class="space-y-2 text-slate-600 pl-4 list-disc">
+                                <li><strong class="text-slate-700">新創企業核心成員：</strong> 大企業分工太細，新創企業從 0 到 1、充滿變動與多元碰撞的環境最對您的胃口。</li>
+                                <li><strong class="text-slate-700">品牌行銷企劃/PR公關：</strong> 鍛鍊解構消費者心理、打磨品牌核心故事與對外談判合作的能力。</li>
+                                <li><strong class="text-slate-700">活動策劃/社群營運總監：</strong> 完美匹配您的舞台感、人際連結優勢，創造深度人際網絡。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2.5 p-4 bg-white rounded-xl border border-slate-150">
+                            <h6 class="font-bold text-emerald-700">💎 此階段必須強行鎖定的「5 大天賦資產」：</h6>
+                            <ul class="space-y-1.5 text-slate-600">
+                                <li>🤝 <strong class="text-slate-700">人脈資產：</strong> 每年深入結交並保持聯絡至少 50 位跨領域創業者與優秀創作者。</li>
+                                <li>📂 <strong class="text-slate-700">代表作案例：</strong> 主導 2-3 個「能拿到市場上高聲宣傳」的代表性品牌合作或活動企劃案例。</li>
+                                <li>📣 <strong class="text-slate-700">個人觀點自媒體：</strong> 利用 LinkedIn、Threads、個人專欄經營「人、故事與品牌定位」的主題自媒體。</li>
+                                <li>💼 <strong class="text-slate-700">商務定價思維：</strong> 主動接觸專案報價、談判、ROI 評估，提前脫離「打工時薪計價」大腦。</li>
+                                <li>💰 <strong class="text-slate-700">6-12 個月生活備用金：</strong> 備妥在不接任何消耗型工作下，依然能從容生活的安全資金。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- S-自僱者 詳細 -->
+                <div id="esbi-details-s" class="space-y-4 hidden">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></span>
+                        <h5 class="font-bold text-slate-800 text-sm">【S 階段：高溢價顧問戰術】擺脫「拿時間換錢」的牢籠</h5>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        自僱者最致命的盲點，是「把自己變成了公司的唯一苦力員工」。如果只是接低客單、高度消耗精力的代操，您將陷入極大痛苦與內耗。您要實施的是<strong>「高感性、高單價顧問包裝」</strong>：
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="p-4 bg-white rounded-xl border border-slate-150 space-y-2">
+                            <div class="font-semibold text-slate-800 flex items-center">
+                                <i class="fa-solid fa-address-card text-emerald-500 mr-1.5"></i>
+                                模式 1：品牌故事與策略顧問
+                            </div>
+                            <p class="text-slate-500 leading-relaxed">
+                                幫助有熱情但不會表達的中小企業或個人創辦人，挖掘其背後的生命歷程、創辦精神，並將其重組轉化為打動投資人與客戶的「核心故事體系與社群內容架構」。
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-slate-150 space-y-2">
+                            <div class="font-semibold text-slate-800 flex items-center">
+                                <i class="fa-solid fa-user-astronaut text-emerald-500 mr-1.5"></i>
+                                模式 2：創辦人個人 IP 顧問
+                            </div>
+                            <p class="text-slate-500 leading-relaxed">
+                                面向身邊極度優秀、具備一技之長但不敢站上舞台表達的專家、設計師、創業者。運用您的「舞台魅力與洞察力」，輔導他們突破心魔、設計自媒體爆發框架。
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-slate-150 space-y-2">
+                            <div class="font-semibold text-slate-800 flex items-center">
+                                <i class="fa-solid fa-handshake-angle text-emerald-500 mr-1.5"></i>
+                                模式 3：品牌體驗與活動策劃人
+                            </div>
+                            <p class="text-slate-500 leading-relaxed">
+                                不做純體力執行的「承包商」。而是幫新潮品牌、社群，客製化設計具備強大連結力量、能讓參與者產生深刻情緒激盪與歸屬感的新型態社交/共創體驗。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B-企業家 詳細 -->
+                <div id="esbi-details-b" class="space-y-4 hidden">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 bg-purple-500 rounded-full"></span>
+                        <h5 class="font-bold text-slate-800 text-sm">【B 階段：系統化運營戰術】搭建讓優秀夥伴共創的舞台</h5>
+                    </div>
+                    <div class="bg-purple-50/40 p-5 rounded-xl border border-purple-100/50 text-xs text-slate-600 space-y-3 leading-relaxed">
+                        <p>
+                            由於您的天性「極其重視團隊，無法忍受默默無名」，因此進入 B 象限時，您千萬別將自己困在繁瑣的內部人事管理或枯燥的行政報表中。
+                        </p>
+                        <p>
+                            您最理想的終局是擔任：<strong>「內容 IP 與創意策展公司的創始人兼創意總監 (Creative Director)」</strong>。
+                        </p>
+                        <strong class="text-slate-800 block">在此定位下，您只被允許負責兩大黃金業務：</strong>
+                        <ul class="list-disc list-inside space-y-1.5 text-slate-500 pl-2">
+                            <li><strong class="text-slate-700">對外舞台：</strong> 站上第一線宣傳公司理念、接洽高單價客戶、主持大型專案開案、上台進行關鍵發表，享受行業聲量。</li>
+                            <li><strong class="text-slate-700">對內核心點子：</strong> 主導頂層創意發想、人性洞察與策略方向，為團隊指明「這件事的核心目標在哪裡」。</li>
+                        </ul>
+                        <p>
+                            其餘耗費時間的專案進度管理（PM）、細部美編撰文、後台技術、稅務財務，一律建立標準工作流程（SOP），委託給最可靠的專業夥伴與團隊執行。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- I-投資者 詳細 -->
+                <div id="esbi-details-i" class="space-y-4 hidden">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 bg-amber-500 rounded-full"></span>
+                        <h5 class="font-bold text-slate-800 text-sm">【I 階段：資源與天使投資戰術】成為優秀創作者的背後推手</h5>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        到了投資者階段，您不該只是盲目盯著股市大盤。您的最高價值在於成為一名<strong>「高感性、人脈驅動型的天使資源配置人」</strong>：
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-white rounded-xl border border-slate-150 space-y-1.5">
+                            <span class="text-amber-600 font-bold block">🛡️ 第一層：防禦型金融配置</span>
+                            <p class="text-slate-500">
+                                透過 B 階段持續流入的系統利潤，配置於全球指數型基金（ETF）、低風險債券，確保您生活與創作底線永遠無憂，確保「永遠不需要為了生活費接無聊的案件」。
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-slate-150 space-y-1.5">
+                            <span class="text-amber-600 font-bold block">🚀 第二層：進攻型「資源型天使投資」</span>
+                            <p class="text-slate-500">
+                                發揮您「能快速看清人性、擁有品牌影響力與人際網」的天賦。尋找您身邊才華橫溢、但缺乏商業思維、不敢站上台包裝自媒體的專家、匠人。投入您的品牌顧問與小額資金，獲取其早期核心股權。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四章：未來 30 年黃金職業排行榜與職涯組合 -->
+        <section class="rounded-2xl border border-slate-200/60 bg-white shadow-premium p-6 sm:p-8 mb-8 print-page-break">
+            <div class="border-b border-slate-150 pb-4 mb-6">
+                <span class="text-[10px] font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 px-3 py-1 rounded-full">GOLDEN PORTFOLIO</span>
+                <h3 class="text-lg font-bold text-slate-900 mt-2">第肆章：黃金職業排行榜與 30 歲理想職涯組合</h3>
+                <p class="text-xs text-slate-500 mt-1">
+                    在 30 歲時，您不應該再侷限於單一死板的職稱。最理想的模式是：
+                    <strong class="text-slate-800">「顧問收入（穩定現金流） × 個人 IP（長期資產） × 社群活動（影響力放大）」</strong> 的多元組合乘法。
+                </p>
+            </div>
+
+            <!-- 適配排行榜 -->
+            <div class="mb-8">
+                <h4 class="text-sm font-semibold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-star text-amber-500 mr-2"></i> 職位與天賦適配度排行榜 (TOP 10)
+                </h4>
+                <div class="overflow-x-auto rounded-xl border border-slate-200/60">
+                    <table class="w-full text-left text-xs sm:text-sm">
+                        <thead class="bg-slate-50 text-slate-500 font-mono text-[11px] uppercase tracking-wider border-b border-slate-200">
+                            <tr>
+                                <th class="p-4">排名</th>
+                                <th class="p-4">未來 30 年黃金職位</th>
+                                <th class="p-4">適配度</th>
+                                <th class="p-4">核心價值所在</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr>
+                                <td class="p-4 font-bold text-indigo-600">01</td>
+                                <td class="p-4 font-semibold text-slate-900">品牌故事策略顧問 (Story Architect)</td>
+                                <td class="p-4 text-amber-400">★★★★★</td>
+                                <td class="p-4 text-slate-600">挖掘並架構品牌靈魂，將抽象理念轉為高共鳴內容。</td>
+                            </tr>
+                            <tr class="bg-slate-50/30">
+                                <td class="p-4 font-bold text-indigo-600">02</td>
+                                <td class="p-4 font-semibold text-slate-900">品牌內容策略師 (Narrative Strategist)</td>
+                                <td class="p-4 text-amber-400">★★★★★</td>
+                                <td class="p-4 text-slate-600">規劃品牌長線敘事路線，對抗 AI 同質化內容。</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-indigo-600">03</td>
+                                <td class="p-4 font-semibold text-slate-900">品牌活動製作人 (Event Producer)</td>
+                                <td class="p-4 text-amber-400">★★★★★</td>
+                                <td class="p-4 text-slate-600">將活動包裝為體驗產品，設計讓人印象深刻的記憶現場。</td>
+                            </tr>
+                            <tr class="bg-slate-50/30">
+                                <td class="p-4 font-bold text-indigo-600">04</td>
+                                <td class="p-4 font-semibold text-slate-900">創辦人個人品牌顧問 (Founder Branding)</td>
+                                <td class="p-4 text-amber-400">★★★★★</td>
+                                <td class="p-4 text-slate-600">一對一輔導企業家突破心魔，建立市場思想領袖地位。</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-indigo-600">05</td>
+                                <td class="p-4 font-semibold text-slate-900">社群策略主管 (Community Builder)</td>
+                                <td class="p-4 text-amber-400">★★★★☆</td>
+                                <td class="p-4 text-slate-600">創造能凝聚同頻群體、帶來極高歸屬感的深度社交場域。</td>
+                            </tr>
+                            <tr class="bg-slate-50/30">
+                                <td class="p-4 font-bold text-indigo-600">06</td>
+                                <td class="p-4 font-semibold text-slate-900">內容企劃主管 (Content Director)</td>
+                                <td class="p-4 text-amber-400">★★★★☆</td>
+                                <td class="p-4 text-slate-600">主導高品質、帶有人性洞察的新媒體內容生產。</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-indigo-600">07</td>
+                                <td class="p-4 font-semibold text-slate-900">公關策略顧問 (PR Strategist)</td>
+                                <td class="p-4 text-amber-400">★★★★☆</td>
+                                <td class="p-4 text-slate-600">協助高敏感事件之敘事溝通，對外建立強大品牌信用。</td>
+                            </tr>
+                            <tr class="bg-slate-50/30">
+                                <td class="p-4 font-bold text-indigo-600">08</td>
+                                <td class="p-4 font-semibold text-slate-900">創意企劃總監 (Creative Director)</td>
+                                <td class="p-4 text-amber-400">★★★★☆</td>
+                                <td class="p-4 text-slate-600">整合跨領域資源，協同設計出突破框架的市場行銷方案。</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-indigo-600">09</td>
+                                <td class="p-4 font-semibold text-slate-900">主持人／講者 (Speaker)</td>
+                                <td class="p-4 text-amber-400">★★★★☆</td>
+                                <td class="p-4 text-slate-600">展現個人舞台魅力，用充滿激情的公開表達吸引受眾。</td>
+                            </tr>
+                            <tr class="bg-slate-50/30">
+                                <td class="p-4 font-bold text-indigo-600">10</td>
+                                <td class="p-4 font-semibold text-slate-900">創作者IP經營者 (Creator Business)</td>
+                                class="p-4 text-amber-400">★★★★☆</td>
+                                <td class="p-4 text-slate-600">打造自己的觀點頻道、短影音、專欄，累積數字資產。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 現階段轉職三梯隊卡位指南 -->
+            <div>
+                <h4 class="text-sm font-semibold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-route text-indigo-500 mr-2"></i> 目前轉職企業累積時，建議卡位職位
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- 第一梯隊 -->
+                    <div class="p-5 rounded-2xl border border-slate-150 bg-slate-50/50 hover:border-indigo-150 hover:bg-white transition-all">
+                        <span class="text-[10px] font-bold text-indigo-600 uppercase bg-indigo-50 px-2 py-0.5 rounded">第一梯隊：核心實戰戰場</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-3 mb-2">建議優先尋找：</h5>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-500 mr-1.5"></i> 品牌經理 / 品牌企劃</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-500 mr-1.5"></i> 行銷企劃主管</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-500 mr-1.5"></i> 內容策略企劃</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-500 mr-1.5"></i> 公關企劃 / 活動企劃</li>
+                        </ul>
+                    </div>
+
+                    <!-- 第二梯隊 -->
+                    <div class="p-5 rounded-2xl border border-slate-150 bg-slate-50/50 hover:border-emerald-150 hover:bg-white transition-all">
+                        <span class="text-[10px] font-bold text-emerald-600 uppercase bg-emerald-50 px-2 py-0.5 rounded">第二梯隊：能量串接戰場</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-3 mb-2">可作為轉接職務：</h5>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> 社群經營主管</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> 會員經營與關係經理</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> 客戶成功經理 (CSM)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> 商業開發 (BD)</li>
+                        </ul>
+                    </div>
+
+                    <!-- 第三梯隊 -->
+                    <div class="p-5 rounded-2xl border border-indigo-200 bg-indigo-50/10 hover:border-indigo-300 transition-all">
+                        <span class="text-[10px] font-bold text-purple-600 uppercase bg-purple-50 px-2 py-0.5 rounded">第三梯隊：長期躍升目標</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-3 mb-2">3~5年內升級方向：</h5>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-rocket text-purple-500 mr-1.5"></i> 獨立品牌顧問 (Consultant)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-rocket text-purple-500 mr-1.5"></i> 創辦人個人品牌導師</li>
+                            <li class="flex items-center"><i class="fa-solid fa-rocket text-purple-500 mr-1.5"></i> 創意總監 (Creative Director)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-rocket text-purple-500 mr-1.5"></i> 獨立內容 IP 主理人</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五章：我的天賦模擬沙盒 (動態比例分析) -->
+        <section class="rounded-2xl border border-slate-200/60 bg-white shadow-premium p-6 sm:p-8 mb-8 no-print">
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fa-solid fa-sliders text-indigo-500 mr-2.5"></i> 第伍章：我的天賦模擬沙盒 (動態比例分析)
+                </h3>
+                <p class="text-xs text-slate-500 mt-1">手動微調下方的五大能力比例，動態看見在不同能力配比下，為您智能推薦的頂級黃金職涯方向。</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- 左側：五大滑桿控制區 -->
+                <div class="lg:col-span-6 space-y-4">
+                    <!-- 滑桿 1：洞察人 -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs">
+                            <span class="font-medium text-slate-700 flex items-center">
+                                <span class="w-2.5 h-2.5 bg-indigo-500 rounded-full mr-2"></span> 1. 人物洞察與心理探求
+                            </span>
+                            <span id="val-insight" class="font-semibold text-slate-900">85%</span>
+                        </div>
+                        <input type="range" id="slide-insight" min="0" max="100" value="85" class="w-full h-1.5 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-indigo-600" oninput="updateSliders()">
+                    </div>
+
+                    <!-- 滑桿 2：創造內容 -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs">
+                            <span class="font-medium text-slate-700 flex items-center">
+                                <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full mr-2"></span> 2. 內容包裝與故事轉化
+                            </span>
+                            <span id="val-content" class="font-semibold text-slate-900">90%</span>
+                        </div>
+                        <input type="range" id="slide-content" min="0" max="100" value="90" class="w-full h-1.5 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-emerald-600" oninput="updateSliders()">
+                    </div>
+
+                    <!-- 滑桿 3：公開表達 -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs">
+                            <span class="font-medium text-slate-700 flex items-center">
+                                <span class="w-2.5 h-2.5 bg-purple-500 rounded-full mr-2"></span> 3. 公開表達與舞台魅力
+                            </span>
+                            <span id="val-expression" class="font-semibold text-slate-900">95%</span>
+                        </div>
+                        <input type="range" id="slide-expression" min="0" max="100" value="95" class="w-full h-1.5 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-purple-600" oninput="updateSliders()">
+                    </div>
+
+                    <!-- 滑桿 4：組織連結 -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs">
+                            <span class="font-medium text-slate-700 flex items-center">
+                                <span class="w-2.5 h-2.5 bg-blue-500 rounded-full mr-2"></span> 4. 資源整合與組織連結
+                            </span>
+                            <span id="val-connection" class="font-semibold text-slate-900">80%</span>
+                        </div>
+                        <input type="range" id="slide-connection" min="0" max="100" value="80" class="w-full h-1.5 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-blue-600" oninput="updateSliders()">
+                    </div>
+
+                    <!-- 滑桿 5：追求影響 -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs">
+                            <span class="font-medium text-slate-700 flex items-center">
+                                <span class="w-2.5 h-2.5 bg-amber-500 rounded-full mr-2"></span> 5. 結果導向與影響渴望
+                            </span>
+                            <span id="val-influence" class="font-semibold text-slate-900">92%</span>
+                        </div>
+                        <input type="range" id="slide-influence" min="0" max="100" value="92" class="w-full h-1.5 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-amber-600" oninput="updateSliders()">
+                    </div>
+                </div>
+
+                <!-- 右側：智能推薦職涯看板 -->
+                <div class="lg:col-span-6">
+                    <div class="p-6 rounded-2xl bg-slate-50/50 border border-slate-200 min-h-[300px] flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[10px] font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 px-2 py-0.5 rounded-full">動態智能評估</span>
+                                <span class="text-xs text-slate-400">天賦配比匹配度：<span id="matching-score" class="font-bold text-indigo-600">92%</span></span>
+                            </div>
+                            
+                            <div id="career-card" class="space-y-3">
+                                <h4 id="career-title" class="font-bold text-slate-805 text-base">正在加載您的天賦配置...</h4>
+                                <p id="career-desc" class="text-xs text-slate-505 leading-relaxed"></p>
+                                
+                                <div class="pt-3 border-t border-slate-200 space-y-1.5">
+                                    <div class="text-xs font-semibold text-slate-700">🔑 核心優勢落實方案：</div>
+                                    <p id="career-plan" class="text-xs text-slate-600 leading-relaxed"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 重設按鈕 -->
+                        <div class="mt-4 pt-3 border-t border-slate-250 flex justify-end">
+                            <button onclick="resetSliders()" class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold transition-colors">
+                                <i class="fa-solid fa-rotate-left mr-1"></i> 恢復至我天生極致黃金配比
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 第六章：天賦啟動清單與盲點防禦系統 -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8 no-print">
+            
+            <!-- 盲點防禦系統 -->
+            <div class="lg:col-span-2 rounded-2xl border border-rose-200/60 bg-rose-50/10 p-6 sm:p-8 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-lg flex items-center mb-3">
+                        <i class="fa-solid fa-triangle-exclamation text-rose-500 mr-2.5"></i> 天賦大腦的關鍵「三大盲點與防禦策略」
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-6">
+                        凡有極強的天賦優勢，必有對應的安全弱項。學會提前識別並建構防禦系統，是您生涯能安全航行十年的關鍵屏障。
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <!-- 盲點 1 -->
+                        <div class="p-4 bg-white rounded-xl border border-rose-100 text-xs">
+                            <span class="font-bold text-rose-700 flex items-center mb-1">
+                                <i class="fa-solid fa-circle-exclamation mr-1.5"></i> 盲點 1：過度追求有趣與意義，遲遲不建立成熟的收費系統
+                            </span>
+                            <p class="text-slate-500 leading-relaxed mb-2">
+                                由於您重人際與意義，極容易被「好玩、對他人有價值」吸引，而去做免費的義工或被嚴重壓價的案件，不願意主動談錢。
+                            </p>
+                            <div class="p-2.5 bg-rose-50 rounded-lg text-rose-950 font-medium">
+                                <strong>💡 防禦鎖定：</strong> 建立信念：『沒有商業收費支撐的熱情，全都是對社會的慢性消耗。』談高定價不是貪婪，而是為了確保自己永遠不為錢妥協，維持高品質。
+                            </div>
+                        </div>
+
+                        <!-- 盲點 2 -->
+                        <div class="p-4 bg-white rounded-xl border border-rose-100 text-xs">
+                            <span class="font-bold text-rose-700 flex items-center mb-1">
+                                <i class="fa-solid fa-circle-exclamation mr-1.5"></i> 盲點 2：自封為默默無聞的「執行者」，自我設限策略高度
+                            </span>
+                            <p class="text-slate-500 leading-relaxed mb-2">
+                                雖然您是天生的「想點子者」，但由於過去在團隊中習慣扮演可靠的執行人以獲取認可，容易不自覺地縮回舒適圈裡做苦力，不敢大膽提出方向。
+                            </p>
+                            <div class="p-2.5 bg-rose-50 rounded-lg text-rose-950 font-medium">
+                                <strong>💡 防禦鎖定：</strong> 提醒自己，您的最大價值不是純手拉手執行，而是「帶領事情發生的人」。多提點子與框架，把瑣碎繁雜的執行委託給別人。
+                            </div>
+                        </div>
+
+                        <!-- 盲點 3 -->
+                        <div class="p-4 bg-white rounded-xl border border-rose-100 text-xs">
+                            <span class="font-bold text-rose-700 flex items-center mb-1">
+                                <i class="fa-solid fa-circle-exclamation mr-1.5"></i> 盲點 3：無法耐住默默無名，容易急功近利走上快餐路線
+                            </span>
+                            <p class="text-slate-500 leading-relaxed mb-2">
+                                您坦言「完全無法接受默默無名」。如果太急於在短時間內獲取鎂光燈，容易選擇膚淺、吸睛但缺乏深度積累的廉價娛樂路線。
+                            </p>
+                            <div class="p-2.5 bg-rose-50 rounded-lg text-rose-950 font-medium">
+                                <strong>💡 防禦鎖定：</strong> 您的優勢在於深度人性故事，您的舞台需要深度支撐。請把「影響力」當作結果，而不是唯一的追逐目的，每年專注打磨 1-2 個重磅代表作。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-400">
+                    <i class="fa-solid fa-shield-halved text-rose-500"></i> 盾牌提醒：天賦大腦的致命防禦武器，就是「學會說不與堅持高價位」。
+                </div>
+            </div>
+
+            <!-- 天賦啟動 check清單 -->
+            <div class="rounded-2xl border border-slate-200/60 bg-white shadow-premium p-6 flex flex-col justify-between">
+                <div>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-slate-900 flex items-center">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mr-2.5"></i> 個人天賦啟動清單
+                        </h3>
+                        <p class="text-[11px] text-slate-400 mt-1">在這裡勾選進度，系統會自動在瀏覽器中保存進度！</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- 第一階段 -->
+                        <div class="space-y-2">
+                            <div class="text-xs font-semibold text-indigo-600 flex items-center justify-between">
+                                <span>第一階段：建立「影響力資產」</span>
+                                <span id="p1-progress" class="text-[10px] bg-indigo-50 px-1.5 py-0.5 rounded">0%</span>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="flex items-start p-2 rounded bg-slate-50 hover:bg-slate-100/50 cursor-pointer text-xs">
+                                    <input type="checkbox" id="chk-1" class="mt-0.5 mr-2.5 h-3.5 w-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" onchange="updateProgress()">
+                                    <span class="text-slate-600 font-medium">積累 6～12 個月安全生活預備金</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded bg-slate-50 hover:bg-slate-100/50 cursor-pointer text-xs">
+                                    <input type="checkbox" id="chk-2" class="mt-0.5 mr-2.5 h-3.5 w-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" onchange="updateProgress()">
+                                    <span class="text-slate-600 font-medium">開通並開始經營個人 Threads 與 LinkedIn</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded bg-slate-50 hover:bg-slate-100/50 cursor-pointer text-xs">
+                                    <input type="checkbox" id="chk-3" class="mt-0.5 mr-2.5 h-3.5 w-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" onchange="updateProgress()">
+                                    <span class="text-slate-600 font-medium">每週發布 1~2 篇「人性洞察與故事」內容</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded bg-slate-50 hover:bg-slate-100/50 cursor-pointer text-xs">
+                                    <input type="checkbox" id="chk-4" class="mt-0.5 mr-2.5 h-3.5 w-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" onchange="updateProgress()">
+                                    <span class="text-slate-600 font-medium">完成 3 個最符合此天賦之作品案例打包</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 第二階段 -->
+                        <div class="space-y-2 pt-2 border-t border-slate-100">
+                            <div class="text-xs font-semibold text-emerald-600 flex items-center justify-between">
+                                <span>第二階段：解鎖自僱高溢價</span>
+                                <span id="p2-progress" class="text-[10px] bg-emerald-50 px-1.5 py-0.5 rounded">0%</span>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="flex items-start p-2 rounded bg-slate-50 hover:bg-slate-100/50 cursor-pointer text-xs">
+                                    <input type="checkbox" id="chk-5" class="mt-0.5 mr-2.5 h-3.5 w-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" onchange="updateProgress()">
+                                    <span class="text-slate-600 font-medium">打包「品牌故事諮詢與定位服務建議書」</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded bg-slate-50 hover:bg-slate-100/50 cursor-pointer text-xs">
+                                    <input type="checkbox" id="chk-6" class="mt-0.5 mr-2.5 h-3.5 w-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" onchange="updateProgress()">
+                                    <span class="text-slate-600 font-medium">簽下第一位付費的品牌定位或個人品牌諮詢客戶</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded bg-slate-50 hover:bg-slate-100/50 cursor-pointer text-xs">
+                                    <input type="checkbox" id="chk-7" class="mt-0.5 mr-2.5 h-3.5 w-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" onchange="updateProgress()">
+                                    <span class="text-slate-600 font-medium">自行舉辦一場 15 人的高感性付費線下沙龍</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pt-4 border-t border-slate-100 text-xs text-slate-400">
+                    <i class="fa-solid fa-flag text-emerald-500"></i> 系統會持續記錄您的生涯晉升節奏。
+                </div>
+            </div>
+        </section>
+
+        <!-- 第七章：天賦與生涯諮詢 Coach AI (不需列印) -->
+        <section class="rounded-2xl border border-slate-200/60 bg-slate-50 shadow-premium p-6 sm:p-8 no-print">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center text-white text-lg">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900">天賦與生涯諮詢 Coach AI</h3>
+                    <p class="text-xs text-slate-500">有任何對於未來大勢、AI 時代定位、或是對這份報告不明白的困惑嗎？讓我為您解答。</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div id="chat-box" class="h-64 overflow-y-auto bg-white border border-slate-200 rounded-2xl p-4 space-y-4 text-xs sm:text-sm">
+                    <div class="flex items-start space-x-2.5">
+                        <div class="w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center text-[10px] font-bold shrink-0">Coach</div>
+                        <div class="p-3 bg-slate-100 rounded-r-xl rounded-bl-xl text-slate-700 leading-relaxed max-w-[85%]">
+                            你好！我是你的天賦引導教練。我已經完全掌握了你在 AI 時代的「品牌故事與影響力策略顧問」定位。你有任何關於未來六大趨勢、AI 與人類優勢防禦，或理想職涯組合的問題嗎？隨時點擊下方推薦話題，或在輸入框裡寫下來吧！
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 推薦問題按鈕 -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="sendPresetQuestion('未來30年，AI最難取代我的什麼天賦優勢？')" class="px-2.5 py-1.5 rounded-full text-xs bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200/50 transition-colors">
+                        ❓ AI 最難取代我的什麼優勢？
+                    </button>
+                    <button onclick="sendPresetQuestion('顧問(穩定) × 個人IP(資產) × 社群(放大) 這套職涯組合該如何落實？')" class="px-2.5 py-1.5 rounded-full text-xs bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200/50 transition-colors">
+                        ❓ 30歲理想職涯組合如何落實？
+                    </button>
+                    <button onclick="sendPresetQuestion('我目前有共享空間與網站SEO營運經驗，要怎麼幫品牌創辦人做故事策略顧問？')" class="px-2.5 py-1.5 rounded-full text-xs bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200/50 transition-colors">
+                        ❓ 怎麼包裝成「創辦人故事策略」？
+                    </button>
+                </div>
+
+                <!-- 輸入框 -->
+                <div class="flex items-center space-x-2">
+                    <input type="text" id="chat-input" placeholder="在這裡輸入你的疑問..." class="flex-grow p-3 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500" onkeydown="if(event.key === 'Enter') handleUserSendMessage()">
+                    <button onclick="handleUserSendMessage()" class="px-4 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs sm:text-sm font-medium transition-colors shadow-sm">
+                        發送
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // 頁面初始化
+        window.onload = function() {
+            loadCheckboxes();
+            updateProgress();
+            updateSliders();
+        };
+
+        // 1. ESBI 選擇邏輯
+        function selectEsbi(type) {
+            const types = ['e', 's', 'b', 'i'];
+            types.forEach(t => {
+                const box = document.getElementById('esbi-' + t);
+                const detail = document.getElementById('esbi-details-' + t);
+                
+                if (t === type) {
+                    box.className = 'p-5 rounded-2xl border-2 border-indigo-600/80 bg-indigo-50/10 cursor-pointer hover:shadow-md transition-all relative group';
+                    detail.classList.remove('hidden');
+                } else {
+                    box.className = 'p-5 rounded-2xl border border-slate-200/60 bg-white cursor-pointer hover:border-slate-300 hover:shadow-md transition-all relative group';
+                    detail.classList.add('hidden');
+                }
+            });
+        }
+
+        // 2. 互動沙盒天賦配置模擬
+        function updateSliders() {
+            const insight = parseInt(document.getElementById('slide-insight').value);
+            const content = parseInt(document.getElementById('slide-content').value);
+            const expression = parseInt(document.getElementById('slide-expression').value);
+            const connection = parseInt(document.getElementById('slide-connection').value);
+            const influence = parseInt(document.getElementById('slide-influence').value);
+
+            document.getElementById('val-insight').innerText = insight + '%';
+            document.getElementById('val-content').innerText = content + '%';
+            document.getElementById('val-expression').innerText = expression + '%';
+            document.getElementById('val-connection').innerText = connection + '%';
+            document.getElementById('val-influence').innerText = influence + '%';
+
+            let careerTitle = "";
+            let careerDesc = "";
+            let careerPlan = "";
+            let matchingScore = 0;
+
+            if (insight >= 80 && content >= 80 && expression >= 80) {
+                careerTitle = "🌟 頂級黃金戰場：品牌故事與影響力策略顧問";
+                careerDesc = "這正是我們為您設計的終極定位。在 AI 大量生成內容的時代，您的『人物洞察、故事轉化與公開表達』組成了無法被機器取代的『人本信任』鏈條。您能在與人深度交往中問出別人提不出的靈魂問題，並將其轉變為高感染力的商業與自媒體故事。";
+                careerPlan = "立即開啟 Threads 與 LinkedIn。第一年先以 E 身份在品牌、活動或社群中大量累積 50+ 優質創業者與案例。第二年起，高姿態切入 S 顧問象限，以單案高定價包裝提供品牌故事顧問諮詢。";
+                matchingScore = Math.round((insight + content + expression) / 3);
+            } else if (connection >= 80 && expression >= 80 && insight < 75) {
+                careerTitle = "⚡ 頂級黃金戰場：品牌體驗設計師 & 跨界社群活動主理人";
+                careerDesc = "當您的『資源連結』與『舞台表達』極高、而『深度人性剖析』略微偏低時，代表您是完美的體驗與歸屬感營造者。您擅長將各路大咖、資源串聯，創造一個讓人產生驚艷連結、並讓眾人產生強烈現場情緒的場域。";
+                careerPlan = "尋求在新潮品牌、新創加速器或大型共創空間擔任『社群經理』或『體驗總監』，在其中高頻度發揮您的舞台主導權與群眾魅力。";
+                matchingScore = Math.round((connection + expression) / 2);
+            } else if (insight >= 80 && connection >= 80 && expression < 75) {
+                careerTitle = "🧘 頂級黃金戰場：高階人生設計顧問與靈魂對談引導師";
+                careerDesc = "當您的『人性洞察』與『關係連結』極高、但『舞台曝光意願』偏低時，代表您是完美的『幕後靈魂智囊與導師』。您能透過深度陪伴，幫有天賦但迷茫的專業人士（設計師、極客），拆解並重塑其大腦定位。";
+                careerPlan = "進修高階 Coaching 教練技術。先從為身邊最頂尖的 10 位優秀自由工作者進行一對一職涯定位，建立強口碑與代表案例。";
+                matchingScore = Math.round((insight + connection) / 2);
+            } else if (influence >= 85 && connection >= 80 && content < 75) {
+                careerTitle = "💼 頂級黃金戰場：新創核心合夥人 & 頂尖商務破局開發 (Head of BD)";
+                careerDesc = "當您的『結果影響力渴望』極高、又擅長與『陌生人快速拉近距離』時，您是完美的開局開拓者。您能像狼一樣為團隊敏銳找到商業突破口，談下高價值合約。";
+                careerPlan = "主動尋求加入早期具有高技術壁壘、但極度缺乏商務與故事行銷人才的新創團隊，以合夥人身份爭取股權與分成，負責幫品牌完成信任背書。";
+                matchingScore = Math.round((influence + connection) / 2);
+            } else {
+                careerTitle = "🔮 頂級黃金戰場：跨界整合內容製片人 / 新媒體內容總監";
+                careerDesc = "您的能力非常多核且平衡！這意味著您擁有極強的綜合大局觀與敏銳眼光，能在創意型產業中勝任高難度的『協調與資源配置』工作。";
+                careerPlan = "努力打磨項目管理（PM）能力，刻意學習如何談判與服務定價，防止天賦才華被廉價、雜亂的執行瑣事磨損。";
+                matchingScore = Math.round((insight + content + expression + connection + influence) / 5);
+            }
+
+            document.getElementById('career-title').innerText = careerTitle;
+            document.getElementById('career-desc').innerText = careerDesc;
+            document.getElementById('career-plan').innerText = careerPlan;
+            document.getElementById('matching-score').innerText = matchingScore + '%';
+        }
+
+        function resetSliders() {
+            document.getElementById('slide-insight').value = 85;
+            document.getElementById('slide-content').value = 90;
+            document.getElementById('slide-expression').value = 95;
+            document.getElementById('slide-connection').value = 80;
+            document.getElementById('slide-influence').value = 92;
+            updateSliders();
+        }
+
+        // 3. 天賦啟動清單 (LocalStorage)
+        function updateProgress() {
+            const chkGroup1 = [1, 2, 3, 4];
+            const chkGroup2 = [5, 6, 7];
+
+            const calcGroup = (ids) => {
+                let checkedCount = 0;
+                ids.forEach(id => {
+                    const el = document.getElementById('chk-' + id);
+                    if (el && el.checked) {
+                        checkedCount++;
+                        localStorage.setItem('chk-trend-' + id, 'true');
+                    } else {
+                        localStorage.setItem('chk-trend-' + id, 'false');
+                    }
+                });
+                return Math.round((checkedCount / ids.length) * 100);
+            };
+
+            document.getElementById('p1-progress').innerText = calcGroup(chkGroup1) + '%';
+            document.getElementById('p2-progress').innerText = calcGroup(chkGroup2) + '%';
+        }
+
+        function loadCheckboxes() {
+            for (let i = 1; i <= 7; i++) {
+                const el = document.getElementById('chk-' + i);
+                if (el) {
+                    const saved = localStorage.getItem('chk-trend-' + i);
+                    if (saved === 'true') {
+                        el.checked = true;
+                    }
+                }
+            }
+        }
+
+        // 4. 生涯導師 Coach AI 即時對答
+        const presetAnswers = {
+            "AI最難取代我的什麼天賦優勢？": `### 🛡️ AI 普及時代下，您堅不可摧的人本防禦資產
+
+AI 會在接下來的 30 年內，將基礎文案、資料整理與數據分析的產出成本降到接近於零。任何試圖與 AI 拼寫作速度、比拼資料搬運的職能，都會遭遇滅頂之災。
+
+然而，**您的天賦剛好完美的卡在了 AI 永遠無法觸及的死角**：
+
+1. **真實性的提煉 (The Authentic Narrative)**
+   AI 只能在已有的數據庫裡進行概率拼裝，它無法與一個活生生的創業者坐在共享辦公室裡喝咖啡，感受到對方眼中的狂熱、焦慮、以及當年差點破產時的痛楚。而這恰恰是您的「探索型人際連結能力」與「找問題核心」能力最擅長的。
+2. **信任關係的建立 (Trust Building)**
+   人們不會因為一篇由 AI 批量生成的精美公關稿而對品牌產生信仰。人們產生信任，是因為看見另一個活生生的人（個人 IP / 創辦人）展現出缺點、掙扎、突破與立場。
+3. **高感性的現場共振 (Experiential Connection)**
+   AI 無法主持一場 15 人的高感性沙龍。那種在舞台上，您隨時觀察台下觀眾細微的眼神、挑動氣氛、引入共創突破的心流體驗，是只有人類大腦、甚至是具有強大「舞台魅力與社交本能」的您，才能營造出的「體驗溢價」。
+
+**💡 策略指引：** 
+不要去當幫產品寫規格、寫基礎 SEO 文案的『社群小編』。您要升級為「探尋創辦人靈魂的採訪者」與「品牌體驗設計師」，賣的是『洞察與高感性現場信任』，這才是 30 年不倒的鐵飯碗。`,
+            
+            "顧問(穩定) × 個人IP(資產) × 社群(放大) 這套職涯組合該如何落實？": `### 🚀 30 歲理想職涯黃金組合：如何三維一體運作
+
+這套公式之所以強大，是因為它解決了單純做 S（自僱者）「有接案有錢、沒接案沒錢」的焦慮，同時兼顧了您渴望團隊與曝光的天性。
+
+* **第一維度：主軸（品牌故事策略顧問）— 穩定現金流 💰**
+  * **角色**：您以專業顧問身份服務企業客戶。
+  * **產出**：幫中小企業、品牌新創挖掘「為什麼大眾該相信我」的品牌定位，並交付定位建議書、故事敘事手冊。
+  * **定價**：單案高客單價計費。您不負責幫他們天天寫低端社群文案，您只做頂層的「故事架構師」與「創意總監」。
+* **第二維度：放大器（個人 IP）— 長期被動資產 📣**
+  * **角色**：您透過個人 Threads、LinkedIn 頻道經營自己的影響力。
+  * **產出**：每週更 1-2 篇「我從某個創業者身上學到的選擇人性」、「品牌成功背後的真實洞察」。
+  * **效益**：當您的個人名字在市場中成為「最懂品牌故事、最會問出靈魂問題的人」，客戶會主動找上門，主動請您幫忙規劃，您不再需要辛苦做商務推銷。
+* **第三維度：能量場（社群與活動）— 影響力閉環 🤝**
+  * **角色**：舉辦「創業者交流論壇」或「高感性線下沙龍」。
+  * **產出**：不辦無聊的工作坊。您設計驚艷的破冰與共創流程，由您擔任主持人，現場展示舞台魅力與問題核心剖析能力。
+  * **效益**：這不只是一次性的活動收入。它將您的 IP 受眾轉為真正的鐵粉，也是您篩選高客單「品牌故事顧問」客戶的最佳商務漏洞。
+
+這三者是互相咬合的齒輪。顧問案為您提供深度案例與穩定收入；個人 IP 幫您低成本獲客；社群活動滿足您不甘默默無名、享受舞台的天性，並放大信用。`,
+
+            "我目前有共享空間與網站SEO營運經驗，要怎麼幫品牌創辦人做故事策略顧問？": `### 🛠️ 實戰轉化：如何將過往經歷無縫包裝成高單價顧問籌碼
+
+千萬別把您的經歷說成「我以前是管空間、做基礎網站、寫寫 SEO 的人」。那叫技能，不叫天賦。您要實行「策略級」的資產重組包裝：
+
+1. **共享空間營運主管 ➔ 「品牌社群體驗專家」**
+   * **話術重組**：『我曾主導共享空間的營運，在那個環境中，我每天直接對接上百位跨領域的自由工作者與新創老闆。這讓我極度敏銳於捕捉創作者、創業者的真實心理痛點，我懂得如何在一面之雅中與陌生人建立信任，並設計出能讓眾人高頻連結、產生黏著度的空間體驗與活動。』
+2. **SEO 與網站規劃 ➔ 「具有搜尋引擎優化防禦力的故事行銷」**
+   * **話術重組**：『很多純創意的品牌顧問寫出來的故事很好看，但在網路上搜尋不到，浪費了大筆預算。我做的 brand narrative，天然具備網站 SEO 佈局與結構化的搜尋優化效益。我幫您寫的故事不只打動人心，更能利用搜尋引擎為品牌源源不斷地帶來長期、低成本的自然流量信任。』
+3. **品牌合作與企劃 ➔ 「B2B 資源跨界策展人」**
+   * **話術重組**：『我擅長穿透混亂，找到合作方最核心的商業痛點。我曾主導品牌跨界合作，這鍛鍊了我跨越不同產業、重新拼裝資源，將雙方想法變成一個極具社會話題與影響力活動的策展思維。』
+
+**💡 具體第一步：**
+整理您過往在營運空間或品牌合作中，**最讓您有心流、成果最漂亮**的 3 個案例。撰寫成 PDF 簡報。不要寫您做了多少行政瑣事，專注寫：『當時的挑戰是什麼、您如何洞察出人的痛點、設計了什麼品牌定位故事、最後拿到了什麼漂亮的合作成果。』這就是您踏向 S 顧問象限最硬底子的提案書。`
+        };
+
+        async function handleUserSendMessage() {
+            const inputEl = document.getElementById('chat-input');
+            const message = inputEl.value.trim();
+            if (!message) return;
+
+            appendMessage('user', message);
+            inputEl.value = "";
+
+            const loadingId = appendMessage('system', 'Coach 正在結合您的天賦背景與未來大勢，為您深度撰寫解答中...');
+
+            setTimeout(() => {
+                const loadingEl = document.getElementById(loadingId);
+                if (loadingEl) loadingEl.remove();
+
+                let responseText = "";
+                if (message.includes("取代") || message.includes("AI") || message.includes("天賦")) {
+                    responseText = presetAnswers["未來30年，AI最難取代我的什麼天賦優勢？"];
+                } else if (message.includes("組合") || message.includes("落實") || message.includes("社群")) {
+                    responseText = presetAnswers["顧問(穩定) × 個人IP(資產) × 社群(放大) 這套職涯組合該如何落實？"];
+                } else if (message.includes("空間") || message.includes("SEO") || message.includes("創辦人")) {
+                    responseText = presetAnswers["我目前有共享空間與網站SEO營運經驗，要怎麼幫品牌創辦人做故事策略顧問？"];
+                } else {
+                    responseText = `### 🌟 親愛的「影響力創意策展人」：
+
+您提問的「${message}」直接指向了您如何將天賦轉換為商業定位的核心。
+
+針對您的複合優勢，教練給您三點關鍵指引：
+
+1. **核心不只是「技能」，而是「人本信用」**：在未來 AI 氾濫的 30 年中，您擁有的「跟人拉近關係、提煉靈魂故事」的能力是極致高定價的。任何時候，不要把自己定位為小編，要定位為幫人重塑靈魂的策略師。
+2. **藉由共創降低執行痛苦**：因為您最不能接受的，是「團隊沒有成果、結果未達期待」。請大膽運用您「整合不同人」的能力，把細部改網站、排版、美編的工作委託給專業夥伴，自己專注於「站在前台、主持開案、提煉頂層故事點子」。
+3. **把「名氣與影響力」當作燃料**：您坦白不喜歡默默無名。請在第一年就開啟您的專欄自媒體，大膽宣誓您的立場與品牌故事。您吸引的人流，就是您未來開高價品牌顧問案的最好保證。
+
+讓我們從第一步開始：您最近有沒有想採訪、或幫忙聊聊的優秀创業者呢？先去跟他們喝杯咖啡，問出他們的真心話吧！`;
+                }
+
+                appendMessage('coach', responseText);
+            }, 1200);
+        }
+
+        function sendPresetQuestion(text) {
+            document.getElementById('chat-input').value = text;
+            handleUserSendMessage();
+        }
+
+        function appendMessage(sender, text) {
+            const chatBox = document.getElementById('chat-box');
+            const msgId = 'msg-' + Date.now();
+            
+            const div = document.createElement('div');
+            div.id = msgId;
+            div.className = "flex items-start space-x-2.5";
+
+            if (sender === 'user') {
+                div.innerHTML = `
+                    <div class="flex-grow"></div>
+                    <div class="p-3 bg-slate-900 text-white rounded-l-xl rounded-br-xl leading-relaxed max-w-[85%] text-left">
+                        ${text}
+                    </div>
+                    <div class="w-7 h-7 rounded-full bg-slate-300 flex items-center justify-center text-[10px] font-bold shrink-0">我</div>
+                `;
+            } else if (sender === 'system') {
+                div.innerHTML = `
+                    <div class="w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center text-[10px] font-bold shrink-0 animate-pulse">Coach</div>
+                    <div class="p-3 bg-slate-50 text-slate-400 italic rounded-r-xl rounded-bl-xl leading-relaxed max-w-[85%]">
+                        ${text}
+                    </div>
+                `;
+            } else {
+                let formattedText = text
+                    .replace(/\n/g, '<br>')
+                    .replace(/### (.*?)<br>/g, '<strong class="text-indigo-700 text-sm block mb-1 mt-2">$1</strong>')
+                    .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-slate-900 font-semibold">$1</strong>')
+                    .replace(/\* (.*?)<br>/g, '<span class="block text-slate-600 pl-2">· $1</span>');
+                
+                div.innerHTML = `
+                    <div class="w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center text-[10px] font-bold shrink-0">Coach</div>
+                    <div class="p-3 bg-slate-100 rounded-r-xl rounded-bl-xl text-slate-700 leading-relaxed max-w-[85%] text-left">
+                        ${formattedText}
+                    </div>
+                `;
+            }
+
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return msgId;
+        }
+    </script>
+</body>
+</html>
